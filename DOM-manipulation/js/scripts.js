@@ -16,3 +16,16 @@ $(document).ready(function() {
       $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
     });
   });
+  $("ul#user").children("li").first().click(function() {
+    alert('hi');
+  });
+  $("ul#webpage").children("li").first().click(function() {
+    alert('hi');
+  });
+  $("ul#user").children("li").first().click(function() {
+    $(this).remove();
+  });
+  $("ul#webpage").children("li").first().click(function() {
+    $(this).remove();
+  });
+
